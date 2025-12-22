@@ -106,7 +106,7 @@ export function Hero({ openContact }: HeroProps = {}) {
               size="lg"
               variant="outline"
               className="glass border-border/50 hover:border-primary/50"
-              onClick={() => window.open('https://drive.google.com/file/d/1Medsu4y5_ux-cg_byKgYvmoXvBPsSlxf/view', '_blank')}
+              onClick={() => window.open('https://drive.google.com/file/d/1539oyZnSW3H2C4bizKvFijOzXBBUF3Fv/view?usp=drivesdk', '_blank')}
             >
               <Download className="mr-2 w-5 h-5" />
               Download Resume

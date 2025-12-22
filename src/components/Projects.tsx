@@ -12,7 +12,7 @@ const projects = [
     year: '2025',
     description: 'Major project: A blockchain-based platform for managing and verifying open-source contributions with KYC, IPFS storage, token rewards, and admin approval workflow.',
     tech: ['Blockchain', 'Solidity', 'Flask', 'React', 'IPFS', 'REST API'],
-    github: 'https://github.com/Adarsh-codesOP/ContriBlock.git',
+    github: 'https://github.com/Akshaybirwa/Contri-Block.git',
     highlights: [
       'Smart contracts for contribution verification',
       'Token reward mechanism',
@@ -26,7 +26,7 @@ const projects = [
     year: '2024',
     description: 'Mini project: System that converts uploaded lecture videos into clean structured notes using NLP and DistilBERT.',
     tech: ['Python', 'NLP', 'DistilBERT', 'Flask', 'AI/ML'],
-    github: 'https://github.com/Adarsh-codesOP/ContriBlock.git',
+    github: 'https://github.com/Akshaybirwa/Video-to-Note-Generating-System.git',
     highlights: [
       'Automatic note generation from video',
       'Clean and structured output format',
