@@ -36,8 +36,8 @@ export function Mascot3D({ targetPosition, mousePosition, currentSection = 'hero
     floatOffset.current += 0.02;
     const time = state.clock.getElapsedTime();
 
-    let animPosOffset = new THREE.Vector3(0, 0, 0);
-    let animRotOffset = new THREE.Vector3(0, 0, 0);
+    const animPosOffset = new THREE.Vector3(0, 0, 0);
+    const animRotOffset = new THREE.Vector3(0, 0, 0);
 
     switch (currentSection) {
       case 'hero':
@@ -218,17 +218,29 @@ export function Mascot3D({ targetPosition, mousePosition, currentSection = 'hero
               />
             </mesh>
 
-            {/* Camera Pupil (The "Eye") - Larger */}
-            <mesh position={[0, 0, 0.27]}>
-              <circleGeometry args={[0.08, 32]} />
-              <meshBasicMaterial color="#000" />
+            <mesh position={[-0.09, 0, 0.275]}>
+              <circleGeometry args={[0.055, 32]} />
+              <meshStandardMaterial
+                color={sectionColors.accent}
+                emissive={sectionColors.led}
+                emissiveIntensity={0.9}
+                metalness={0.3}
+                roughness={0.2}
+              />
+            </mesh>
+            <mesh position={[0.09, 0, 0.275]}>
+              <circleGeometry args={[0.055, 32]} />
+              <meshStandardMaterial
+                color={sectionColors.accent}
+                emissive={sectionColors.led}
+                emissiveIntensity={0.9}
+                metalness={0.3}
+                roughness={0.2}
+              />
             </mesh>
 
-            {/* Pupil Reflection/Glint */}
-            <mesh position={[0.03, 0.03, 0.275]}>
-              <circleGeometry args={[0.02, 16]} />
-              <meshBasicMaterial color="#fff" opacity={0.8} transparent />
-            </mesh>
+            <pointLight position={[-0.09, 0, 0.28]} intensity={0.8} color={sectionColors.led} distance={1.5} />
+            <pointLight position={[0.09, 0, 0.28]} intensity={0.8} color={sectionColors.led} distance={1.5} />
 
             {/* Camera Active LED */}
             <mesh position={[0.18, 0.18, 0.18]} material={ledMaterial}>

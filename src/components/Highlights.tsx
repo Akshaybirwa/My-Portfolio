@@ -70,12 +70,12 @@ const achievements = [
 
 const leadership = [
   {
-    role: 'Student Placement Coordinator',
-    description: 'Assisted in placement drives and guided peers in coding preparation',
-  },
+  role: 'Class Representative (CR)',
+  description: 'Served as Class Representative, acting as a bridge between students and faculty, coordinating academic activities, addressing student concerns, and ensuring smooth communication within the class',
+},
   {
-    role: 'Joint Secretary (ASCEE)',
-    description: 'Led hackathons and workshops for 300+ participants, boosting engagement by 40%',
+    role: 'Event Coordinator (ASCEE)',
+    description: 'Led hackathons and workshops for 250+ participants, boosting engagement by 40%',
   },
   {
     role: 'Hackathon Organizer',
@@ -156,7 +156,7 @@ export function Highlights() {
 
             {/* Achievements */}
             <motion.div variants={itemVariants}>
-              <Card className="glass h-full glow-primary">
+              <Card className="glass h-full">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-2xl">
                     <Trophy className="w-7 h-7 text-accent" />

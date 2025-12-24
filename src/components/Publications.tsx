@@ -49,7 +49,7 @@ export function Publications({ openContact }: PublicationsProps) {
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <motion.div variants={itemVariants}>
-              <Card className="glass glow-secondary">
+              <Card className="glass">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-3 text-2xl">
                     <FileText className="w-7 h-7 text-secondary" />
